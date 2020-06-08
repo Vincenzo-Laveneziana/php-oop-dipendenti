@@ -2,21 +2,20 @@
 
 include_once __DIR__.'/Dipendenti.php';
 
-class Magazzinieri extends Dipendenti{
+class Cassieri extends Dipendenti{
   //Property
   public $ruolo;
   public $id;
-  public $pianoLavorativo;
+  public $numCassa;
 
   //Construct
-  public function __construct($_nome, $_cognome, $_eta, $_ruolo, $_id, $_pianoLavorativo){
+  public function __construct($_nome, $_cognome, $_eta, $_ruolo, $_id, $_numCassa){
     parent::__construct($_nome, $_cognome, $_eta);
     $this->ruolo = $_ruolo;
     $this->id = $_id;
-    $this->pianoLavorativo = $_pianoLavorativo;
+    $this->numCassa = $_numCassa;
   }
 
+  
 
 }
-
-
